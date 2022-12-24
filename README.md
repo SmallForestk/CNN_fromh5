@@ -41,6 +41,7 @@ ConvNN_3D_h5testmu.pyとConv3D_mutest.shがtrainのときと同じpathの中に�
 読み込むmodelはtrainの最中のLossの値を見ながらConv3D_mutest.shのなかで指定する。
 
 ##　classification
+
 classificationで使用するファイルはすべて
 ```
 /home/kobayashik/geant4/pi_k_experiment/AHCAL/classification/stable_energy/CNN
