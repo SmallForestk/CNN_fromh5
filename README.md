@@ -39,3 +39,19 @@ ConvNN_3D_h5retest.pyとConv3D_retest.shがtrainのときと同じpathの中に�
 ### test
 ConvNN_3D_h5testmu.pyとConv3D_mutest.shがtrainのときと同じpathの中においてあるので、Conv3D_mutest.shを実行してEnergyがランダムなDatasetでのtestを行う。
 読み込むmodelはtrainの最中のLossの値を見ながらConv3D_mutest.shのなかで指定する。
+
+##classification
+classificationで使用するファイルはすべて
+```
+/home/kobayashik/geant4/pi_k_experiment/AHCAL/classification/stable_energy/CNN
+```
+において使用する
+
+### Datasetの作成
+make_3Dimage_h5.shを時以降するとmake_3Dhitmap_h5.pyが実行され、Datasetが作成できる。
+
+###train
+trainはConvNN_3Dh5.shを実行するとConvNN_3D_h5.pyが実行され、trainが実行される。
+
+###解析
+解析はtrainのあとにanalysis_3D.ipynbで行う。
