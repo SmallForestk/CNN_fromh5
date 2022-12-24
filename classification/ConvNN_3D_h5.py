@@ -29,7 +29,7 @@ import Line_module
 Line_module.notify_to_line("start in " + exe_file + f"learning rate={lr}, {num_epoch}epoch")
 
 # Get number of Event
-h5py_path = "/mnt/scratch/kobayashik/hitmap_100kE.h5"
+h5py_path = "/mnt/scratch/kobayashik/hitmap.h5"
 with h5py.File(h5py_path) as f:
     nofsignal = f[sparticle]["nofEvent"][()]
     nofbackgraund = f[bparticle]["nofEvent"][()]
