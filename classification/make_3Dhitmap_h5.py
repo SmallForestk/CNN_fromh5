@@ -22,7 +22,7 @@ Line_module.notify_to_line("make hitmap in " + exe_file + " particle:" + particl
 print("make hitmap in " + exe_file + " particle:" + particle)
 
 # read root file and get ttree
-rf = r.TFile("./" + exe_file + "/" + particle + "_100kE.root")
+rf = r.TFile("./" + exe_file + "/" + particle + ".root")
 tree = rf.Get("Edep")
 
 # get ttree profile
@@ -39,7 +39,7 @@ edep = []
 # before event number(default=0)
 before_event = 0
 
-with h5py.File("./" + exe_file + "/hitmap3D/hitmap_100kE.h5", "a") as f:
+with h5py.File("./" + exe_file + "/hitmap3D/hitmap.h5", "a") as f:
     for group in f:
         if group==particle:
             del f[particle]
